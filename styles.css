@@ -16,8 +16,9 @@ body, html {
 }
 
 .banner {
-    background-color: red;
     width:35vw;
+    background-image:url("assets/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size:50vw;
 }
 
 .formArea {
