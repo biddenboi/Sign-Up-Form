@@ -1,0 +1,13 @@
+:root {
+    --gunmetal: #2C3539;
+    --light-grey: #E5E7EB;
+    --white: #ffffff;
+}
+
+.banner {
+    background-color: red;
+}
+
+.formArea {
+    background-color: blue;
+}
