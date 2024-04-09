@@ -4,6 +4,11 @@
     --white: #ffffff;
 }
 
+body, html {
+    width:100%;
+    height:100%;
+}
+
 * {
     margin:0;
     border:0;
@@ -12,10 +17,12 @@
 
 .banner {
     background-color: red;
+    width:35vw;
 }
 
 .formArea {
     background-color: blue;
+    width:65vw;
 }
 
 body {
