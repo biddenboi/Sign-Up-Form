@@ -63,10 +63,13 @@ div.formArea > h3 {
 }
 
 div.formArea form.login {
+    display:flex;
+    flex-direction: column;
+    gap:50px;
     background-color: var(--white);
     width:100%;
-    padding:60px;
-    height:25%;
+    padding: 25px 60px;
+    height:35%;
     box-shadow: 2px 5px 10px rgb(217, 217, 217);
 }
 
@@ -104,4 +107,24 @@ div.banner > p {
 body {
     display:flex;
 }
+
+form.login > h3 {
+    font-size:30px;
+}
+
+form.login input {
+    border: 1px solid #E5E7EB;
+    border-radius: 7px;
+    height:35px;
+    width:300px;
+}
+
+form.login label {
+    color:var(--gunmetal);
+    opacity: .9;
+    font-weight: normal;
+    font-size:16px;
+    
+}
+
 
