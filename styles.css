@@ -4,10 +4,20 @@
     --white: #ffffff;
 }
 
+* {
+    margin:none;
+    border:none;
+    padding:none;
+}
+
 .banner {
     background-color: red;
 }
 
 .formArea {
     background-color: blue;
+}
+
+body {
+    display:flex;
 }
