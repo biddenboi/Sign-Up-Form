@@ -155,15 +155,11 @@ form.login label {
     display: block;
 }
 
-form.login input:invalid {
-    border:  1px solid red;
-}
-
-form.login input + span::before {
+.inputEmpty::before {
     position:absolute;
 }
 
-form.login input:required:empty:invalid + span::before  {
+.inputEmpty + span::before  {
     position:relative;
     font-size:11px;
     content: "*This is a required field";
