@@ -49,13 +49,13 @@
                     <span></span>
                 </p>
                 <p>
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassword" required>
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_password" required>
                     <span></span>
                 </p>
             </div>
         </form>
-        <button type="submit" form="login">Create Account</button>
+        <button id="loginForm-button" type="submit" form="login" onkeyup="checkPassword()">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
     </div>
     <script src="script.js"></script>
