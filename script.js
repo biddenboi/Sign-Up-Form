@@ -7,6 +7,12 @@ document.querySelector("#loginForm-button").addEventListener("click", (e) => {
 
         document.querySelector("input#password + span").classList.add("passwordMismatch");
         document.querySelector("input#confirm_password + span").classList.add("passwordMismatch");
+    }else {
+        document.querySelector("input#password").style.borderColor = "#E5E7EB";
+        document.querySelector("input#confirm_password").style.borderColor = "#E5E7EB";
+
+        document.querySelector("input#password + span").classList.remove("passwordMismatch");
+        document.querySelector("input#confirm_password + span").classList.remove("passwordMismatch");
     }
     
 })
