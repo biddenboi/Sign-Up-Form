@@ -169,3 +169,10 @@ form.login input:required:empty:invalid + span::before  {
     content: "*This is a required field";
     color:red;
 }
+
+.passwordMismatch::before  {
+    position:relative;
+    font-size:11px;
+    content: "*The passwords must match";
+    color:red;
+}
