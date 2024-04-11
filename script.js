@@ -15,5 +15,14 @@ document.querySelector("#loginForm-button").addEventListener("click", (e) => {
         document.querySelector("input#confirm_password + span").classList.remove("passwordMismatch");
     }
     
+    document.querySelectorAll("input:required").forEach((input) => {
+        if (input.value == "") {
+            input.classList.add("inputEmpty");
+            input.style.borderColor = "red";
+        }else {
+            input.classList.remove("inputEmpty");
+            input.style.borderColor = "#E5E7EB";
+        }
+    })
 })
 
