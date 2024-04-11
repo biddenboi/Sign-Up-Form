@@ -134,6 +134,10 @@ form.login div {
     gap:75px;
 }
 
+form.login p {
+    height:60px;
+}
+
 form.login input {
     border: 1px solid #E5E7EB;
     border-radius: 7px;
@@ -151,11 +155,18 @@ form.login label {
     display: block;
 }
 
-form.login input[type="password"]:invalid {
+form.login input:invalid {
     border:  1px solid red;
 }
 
-form.login input[type="password"]:invalid::after {
-    content: "Please enter a password";
+form.login input + span::before {
+    position:absolute;
+}
+
+form.login input:required:empty:invalid + span::before  {
+    position:relative;
+    font-size:11px;
+    content: "*This is a required field";
     color:red;
 }
+
