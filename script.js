@@ -9,9 +9,5 @@ document.querySelector("#loginForm-button").addEventListener("click", (e) => {
         document.querySelector("input#confirm_password + span").classList.add("passwordMismatch");
     }
     
-    document.querySelectorAll("input:required:empty").forEach((input) => {
-        input.style.borderColor = "red";
-        input.classList.toggle("inputEmpty");
-    })
 })
 
