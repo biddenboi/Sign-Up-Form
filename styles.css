@@ -86,6 +86,22 @@ form.login + button[type="submit"] {
     cursor:pointer;
 }
 
+button,
+label,
+input,
+select,
+progress,
+meter {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
+
 div.formArea > p {
     margin-left:60px;
     font-weight:bold;
@@ -136,9 +152,10 @@ form.login label {
 }
 
 form.login input[type="password"]:invalid {
-    border: red;
+    border:  1px solid red;
 }
 
 form.login input[type="password"]:invalid::after {
-    content: "Passwords must be 12-20 characters with 1 special character";
+    content: "Please enter a password";
+    color:red;
 }
