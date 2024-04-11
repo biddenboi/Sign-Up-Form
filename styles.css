@@ -3,7 +3,7 @@
     --gunmetal: #2C3539;
     --light-grey: #f6f8f9;
     --white: #ffffff;
-    --dark-green:#123524;
+    --dark-green:#1c4f36;
 }
 
 body, html {
@@ -83,6 +83,7 @@ form.login + button[type="submit"] {
     font-weight:bolder;
     border-radius:7px;
     box-shadow: 2px 5px 10px rgb(217, 217, 217);
+    cursor:pointer;
 }
 
 div.formArea > p {
@@ -134,4 +135,10 @@ form.login label {
     display: block;
 }
 
+form.login input[type="password"]:invalid {
+    border: red;
+}
 
+form.login input[type="password"]:invalid::after {
+    content: "Passwords must be 12-20 characters with 1 special character";
+}
